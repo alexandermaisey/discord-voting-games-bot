@@ -1,9 +1,10 @@
-# discord-voting-games-bot
+# Discord Voting Games Bot
 A bot for Discord that makes ranking/voting games easier to manage and create. Comprises a number of simple media ranking games such as "Upvote/Downvote" "Left or Right", "Rank 1 through 5", "Hug/Kiss/Punch", etc. Automatically creates threads from messages.
 
 When a channel is configured to use this bot, messages without media attachments are automatically deleted; Messages with media attachments are populated automatically with the appropriate reaction emoji (i.e., if the channel's "game mode" is "Upvote/Downvote", the message will automatically have the emojis "⬆️" and "⬇️" applied).
 
-* Available Games (Default game is "Upvote/Downvote". This can be configured by invoking `/set_game_type`):
+Available Games include:
+
 - Rank 1 through 5
 - Rank 1 through 10
 - Left or Right
@@ -11,9 +12,10 @@ When a channel is configured to use this bot, messages without media attachments
 - Upvote/Downvote
 - Hug/Kiss/Punch
 
-By default, additional emojis reactions outside of those posted by the bot are automatically deleted (will be configurable in a later version)
+By default, the game is "Upvote/Downvote". This can be configured by invoking `/set_game_type`. *This setting effects an entire channel so it is suggested that if you want a "Hug/Kiss/Punch" game, you create a channel for that and configure the bot appropriately within that channel.*
 By default, users can only make one emoji reaction selection. This can be configured by invoking `/set_allow_multiple`
 By default, threads are automatically created by the bot. This can be configured by invoking `/set_auto_threading`
+By default, additional emojis reactions outside of those posted by the bot are automatically deleted (will be configurable in a later version)
 
 ## Installation Instructions
 - `yarn install` to install; `yarn dev` to run in dev mode (hot reloads); `yarn setup` to install and build on a server followed by `yarn start` (or `pm2 start bot_pm2.pson` in pm2 environments)
