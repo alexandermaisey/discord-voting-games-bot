@@ -1,0 +1,9 @@
+{
+    "apps": [
+      {
+        "name": "Discord Voting Games Bot",
+        "script": "yarn run start",
+        "args": "start"
+      }
+    ]
+  }

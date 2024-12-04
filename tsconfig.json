@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "ES2020", // Allows modern JavaScript features
+    "module": "CommonJS", // Required for Node.js compatibility
+    "lib": ["ES2020"], // Include modern libraries
+    "outDir": "./dist", // Output directory for compiled JavaScript files
+    "rootDir": "./src", // Source files directory
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+    "skipLibCheck": true, // Skip checking declaration files for faster builds
+    "paths": {
+      "*": ["node_modules/*", "src/*"]
+    },
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
+}
